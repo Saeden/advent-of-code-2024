@@ -35,7 +35,7 @@ export async function day2a(data: string[]) {
       continue;
     }
     let unsafeReport = false;
-    for (let i = 1; i < report.length - 1; i++) {
+    for (let i = 1; i < report.length; i++) {
       if (report[i] < report[i - 1] && ascending) {
         unsafeReport = true;
         break;
